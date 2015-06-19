@@ -1,0 +1,16 @@
+
+<table>
+  <% @locations.each do |location| %>
+    <tr>
+      <td>
+        <%= location.title %>
+      </td>
+      <td>
+        <%= location.street %>
+      </td>
+      <td>
+        <%= link_to 'foto', location.image %>
+      </td>
+    </tr>
+  <% end %>
+</table>
